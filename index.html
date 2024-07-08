@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Business Car</title>
+    <link rel="stylesheet" href="src/css/output.css">
+    <link rel="shortcut icon" href="./src/assets/img/nico blue fond.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="overflow-x-hidden w-screen">
+    <main class="w-full overflow-x-hidden">
+
+        <!-- Header -->
+        <div class="h-1.5 bg-blue-700 w-screen text-transparent">.</div>
+        <header  class="bg-white/50 head h-[13vh] lg:h-[11vh] sticky z-50 top-0 backdrop-blur-lg border-blue-950/10 px-4 lg:px-12 p-2">
+          <div class="container lg:-mt-3 flex items-center mx-auto justify-between">
+            <div class="h-20 w-20 flex justify-center items-center">
+              <a href="index.html" class=""><img src="./src/assets/img/logo nico.png" class="" alt=""></a>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <nav class="lg:border-r nav bg-white lg:bg-transparent scale-0 duration-300 lg:scale-100 w-[87vw] lg:w-max absolute top-24 lg:top-0 left-8 lg:left-0 border  lg:border-0 shadow-sm lg:shadow-none rounded-2xl lg:rounded-none p-6 lg:relative border-blue-950/10 lg:p-0">
+                <ul class="lg:text-lg lg:mr-6 text-blue-950 lg:gap-8 flex flex-col lg:flex-row lg:items-center">
+                  <li>
+                    <a href="./index.html" class="hover:text-blue-700 duration-300 text-blue-700">Acceuil</a>
+                  </li>
+                  <li class="mt-4 lg:mt-0">
+                    <a href="./src/pages/about.html" class="hover:text-blue-700 duration-300">A propos</a>
+                  </li>
+                  <li class="mt-4 lg:mt-0">
+                    <button href="" class="hover:text-blue-700 group vehiculebtn duration-300 hidden lg:flex lg:items-center lg:gap-2">
+                      <span>Nos véhicules</span>
+                      <i class='bx bx-chevron-down text-xl group-hover:rotate-180 duration-300'></i>
+                    </button>
+                    <button href="" class="hover:text-blue-700 vehiculebtn2 flex items-center gap-2 duration-300 lg:hidden">
+                      <span>Nos véhicules</span>
+                      <i class='bx bx-chevron-down text-xl'></i>
+                    </button>
+                    <ul id="" class="relative h-0 dropdown  overflow-hidden  lg:h-max lg:bg-white lg:p-5 lg:scale-0 lg:shadow-sm  lg:w-[46vw] lg:rounded-2xl lg:top-10 grid lg:right-5 lg:grid-cols-2 lg:absolute lg:group-hover:translate-y-0
+                    duration-200 lg:text-lg lg:border lg:gap-4">
+                      <li><a href="./src/pages/toyota.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/toyota.png" width="30" class="hidden lg:block" alt="">
+                        <span>Toyota</span></a></li>
+                      <li><a href="./src/pages/nissan.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/nissan.png" width="40" class="hidden lg:block" alt="">
+                        <span>Nissan</span></a></li>
+                      <li><a href="./src/pages/ford.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/ford-logo.png" width="30" class="hidden lg:block" alt="">
+                        <span>Ford</span></a></li>
+                      <li><a href="./src/pages/mercedes.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/Mercedes.png" width="30" class="hidden lg:block" alt="">
+                        <span>Mercedes</span></a></li>
+                      <li><a href="./src/pages/chevrolet.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/chevrolelt logo.png" width="30" class="hidden lg:block" alt="">
+                        <span>Chevrolet</span></a></li>
+                      <li><a href="./src/pages/porshe.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/porshe.png" width="30" class="hidden lg:block" alt="">
+                        <span>Porshe</span></a></li>
+                      <li><a href="./src/pages/audi.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/audi.png" width="30" class="hidden lg:block" alt="">
+                        <span>Audi</span></a></li>
+                      <li><a href="./src/pages/bmw.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/bmw.png" width="30" class="hidden lg:block" alt="">
+                        <span>BMW</span></a></li>
+                      <li><a href="./src/pages/bus.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/Yutong_logo.png" width="30" class="hidden lg:block" alt="">
+                        <span>Bus</span></a></li>
+                      <li><a href="./src/pages/truck.html" class="lg:p-2 lg:flex lg:items-center lg:hover:bg-blue-50 lg:rounded-lg hover:shadow-sm lg:gap-2">
+                        <img src="./src/assets/img/Sinotruk_logo_2.png" width="30" class="hidden lg:block" alt="">
+                        <span>Camion</span></a></li>
+                    </ul>
+                  </li>
+                  <!-- <li class="mt-4 lg:mt-0">
+                    <a href="./src/pages/galerie.html" class="hover:text-blue-700 duration-300">galerie</a>
+                  </li> -->
+                  <li class="mt-4 lg:mt-0">
+                    <a href="./src/pages/galerie.html" class="hover:text-blue-700 duration-300">Galerie</a>
+                  </li>
+                </ul>
+              </nav>
+  
+              <div class="flex">
+                <a href="./src/pages/contact.html" class="block p-2 hover:text-blue-700 hover:bg-transparent duration-300 font-light lg:p-3 px-6 lg:px-8 text-sm bg-blue-700 border border-blue-700/15 text-white rounded-md">Contact</a>
+                <button title="menu button" class="ml-2 lg:hidden relative toggleMenuBtn" id="">
+                  <div class="w-5 barUn h-0.5 bg-blue-950 rounded-full duration-300"></div>
+                  <div class="w-5 relative barDeux h-0.5 bg-blue-950 rounded-full duration-300 mt-1.5"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- section d'acceuil -->
+        <section class="h-max lg:h-[100vh] relative bg-gradient-to-b from-transparent to-blue-400/15">
+          <div class="container h-full mt-12 lg:mt-0 mb-12 lg:mb-0 mx-auto grid lg:grid-cols-2 place-content-center items-center">
+            <div class="lg:ml-12 text-blue-950 p-6 lg:p-0">
+              <div class="text-3xl lg:text-5xl text-center lg:text-left flex flex-col items-center lg:items-start font-medium">
+                <h1 class="bg-blue-950/20 text1 text-blue-700 p-2 lg:w-max border-dashed border w-max border-blue-700/70">Bienvenue chez</h1>
+                <h1 class="bg-gradient-to-l text2 from-blue-700 to-blue-950 bg-clip-text text-transparent">NicoBusinessCars</h1>
+                <h1 class="bg-gradient-to-l text3 from-blue-700 to-blue-950 bg-clip-text text-transparent">Nouvelle Jerusalem</h1>
+              </div>
+              <p class="mt-8 para text-center lg:text-left lg:w-[80%] text-black/90">
+                Votre concessionnaire automobile de confiance <br>
+                etabli à lubumbashi depuis 2008 jusqu'à nos jours
+              </p>
+  
+              <div class="flex btngroup flex-col lg:flex-row gap-4 mt-8">
+                <a href="./src/pages/contact.html" class="p-4 px-8 text-sm bg-blue-700 border hover:bg-blue-800 duration-300 border-blue-700/15 text-white text-center rounded-md">
+                  Nous contacter</a>
+                <a href="./src/pages/about.html" class="p-4 px-8 text-sm bg-blue-50 border hover:bg-blue-100 duration-300 border-blue-700/15 text-blue-500 text-center rounded-md">
+                  En savoir plus</a>
+              </div>
+            </div>
+            <div class="relative carou">
+              
+              <!-- Swiper -->
+              <div class="swiper mySwiper mt-12 lg:-mt-12 mb-12 lg:mb-0 w-[88vw] lg:w-[90%] h-[50vh] lg:h-[68vh] hidden lg:block overflow-hidden rounded-md relative z-30">
+                <div class="swiper-wrapper size-full relative">
+                  <div class="swiper-slide size-full bg-blue-200 grid overflow-hidden place-content-center">
+                    <div class="absolute flex flex-col justify-end z-30 bg-gradient-to-b from-transparent to-black size-full p-6 text-white">
+                        <h2 class="text-2xl font-bold">Toyota TXL</h2>
+                        <div class="mt-5 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <p>Turbo Diesel</p>
+                            <p>7 places</p>
+                            <p>4 Cylindres</p>
+                            <p>Manuelle</p>
+                        </div>
+                    </div>
+                    <img src="src/assets/img/txl (7).jpg" class="h-full w-full object-cover relative z-10" alt="vehicule">
+                  </div>
+                  <div class="swiper-slide relative size-full bg-blue-200 grid overflow-hidden place-content-center">
+                    <div class="absolute flex flex-col justify-end z-30 bg-gradient-to-b from-transparent to-black size-full p-6 text-white">
+                        <h2 class="text-2xl font-bold">Toyota TX</h2>
+                        <div class="mt-5 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <p>Diesel</p>
+                            <p>7 places</p>
+                            <p>4 Cylindres</p>
+                            <p>Manuelle</p>
+                        </div>
+                    </div>
+                    <img src="src/assets/img/tx.jpg" class="h-full w-full object-cover relative z-10" alt="vehicule">
+                  </div>
+                  <div class="swiper-slide relative size-full bg-blue-200 grid overflow-hidden place-content-center">
+                    <div class="absolute flex flex-col justify-end z-30 bg-gradient-to-b from-transparent to-black size-full p-6 text-white">
+                        <h2 class="text-2xl font-bold">LandCruiser S70</h2>
+                        <div class="mt-5 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <p>2023</p>
+                            <p>Essence</p>
+                            <p>4 Cylindres</p>
+                            <p>Automatique</p>
+                        </div>
+                    </div>
+                    <img src="src/assets/img/landcruiser (5).jpg" class="h-full w-full object-cover relative z-10" alt="vehicule">
+                  </div>
+                  <div class="swiper-slide relative size-full bg-blue-200 grid overflow-hidden place-content-center">
+                    <div class="absolute flex flex-col justify-end z-30 bg-gradient-to-b from-transparent to-black size-full p-6 text-white">
+                        <h2 class="text-2xl font-bold">Hilux Pickup</h2>
+                        <div class="mt-5 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <p>2023</p>
+                            <p>Diesel</p>
+                            <p>4 Cylindres</p>
+                            <p>Manuelle</p>
+                        </div>
+                    </div>
+                    <img src="src/assets/img/hilux.jpg" class="h-full w-full object-cover relative z-10" alt="vehicule">
+                  </div>
+                  <div class="swiper-slide relative size-full bg-blue-200 grid overflow-hidden place-content-center">
+                    <div class="absolute flex flex-col justify-end z-30 bg-gradient-to-b from-transparent to-black size-full p-6 text-white">
+                        <h2 class="text-2xl font-bold">Rav 4</h2>
+                        <div class="mt-5 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <p>Hybrid</p>
+                            <p>5 places</p>
+                            <p>4 Cylindres</p>
+                            <p>Automatique</p>
+                        </div>
+                    </div>
+                    <img src="src/assets/img/rav4.jpg" class="h-full w-full object-cover relative z-10" alt="vehicule">
+                  </div>
+                  <div class="swiper-slide relative size-full bg-blue-200 grid overflow-hidden place-content-center">
+                    <div class="absolute flex flex-col justify-end z-30 bg-gradient-to-b from-transparent to-black size-full p-6 text-white">
+                        <h2 class="text-2xl font-bold">Toyota Corolla</h2>
+                        <div class="mt-5 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <p>Essence</p>
+                            <p>5 places</p>
+                            <p>4 cylindres</p>
+                            <p>Automatique</p>
+                        </div>
+                    </div>
+                    <img src="src/assets/img/corola.jpg" class="h-full w-full object-cover relative z-10" alt="vehicule">
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Nos marques les plus vendus -->
+        <section class="marque">
+          <div class="h-max lg:h-[40vh] mb-12 flex flex-col justify-center container mx-auto border-t border-b">
+            <div class="mt-12">
+              <h1 class="text-center uppercase">Nos marques les plus vendus</h1>
+            </div>
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full mt-8 justify-between"
+            >
+              <div class="flex items-center justify-center p-4">
+                <img src="src/assets/img/toyota.png" class="w-20" alt="" />
+              </div>
+              <div class="flex items-center justify-center p-4">
+                <img src="src/assets/img/ford-logo.png" class="w-28" alt="" />
+              </div>
+              <div class="flex items-center justify-center p-4">
+                <img src="src/assets/img/Mercedes.png" class="w-16" alt="" />
+              </div>
+              <div class="flex items-center justify-center p-4">
+                <img src="src/assets/img/chevrolelt logo.png" class="w-20" alt="" />
+              </div>
+              <div class="flex items-center justify-center p-4">
+                <img src="src/assets/img/nissan.png" class="w-28" alt="" />
+              </div>
+              <div class="flex items-center justify-center p-4">
+                <img src="src/assets/img/bmw.png" class="w-20" alt="" />
+              </div>
+            </div>
+            <div class="mb-12 text-transparent">.</div>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section class="h-max lg:h-[100vh] service flex items-center justify-center">
+          <div class="container mx-auto flex p-4 lg:p-0 flex-col items-center">
+            <div class="text-blue-950">
+              <h2 class=" text-3xl lg:text-5xl text-center">
+                Découvrez nos services
+              </h2>
+              <p class="text-center mt-4">
+                Nous nous occupons de disponibiliser votre voiture <br class="hidden lg:block">
+                découvrez les services que nous offrons à notre aimable clientelle
+              </p>
+            </div>
+  
+            <div class="border lg:w-[85%] shadow-sm mt-16 gap-8 grid lg:grid-cols-3 p-4 rounded-2xl text-blue-950">
+              <div class="p-4 border-b lg:border-b-0 lg:border-r h-[40vh] flex flex-col justify-center">
+                <div class="text-2xl lg:text-3xl mb-4">
+                  <i class='bx bx-money bg-blue-100 shadow-sm text-blue-700 border-blue-700/15 rounded-full p-4'></i>
+                </div>
+                <h2 class="text-3xl ">Vente</h2>
+                <p class="mt-3">
+                  Nous sommes dans la vente des vehicules neufs et usagés de toutes les marques et models 
+                </p>
+              </div>
+              <div class="p-4 border-b lg:border-b-0 lg:border-r h-[40vh] flex flex-col justify-center">
+                <div class="text-2xl lg:text-3xl mb-4">
+                  <i class='bx bx-transfer-alt shadow-sm text-blue-700 border-blue-700/15 bg-blue-100 rounded-full p-4'></i>
+                </div>
+                <h2 class="text-3xl">Location</h2>
+                <p class="mt-3">
+                  Nous faisons la locations de nos vehicules pour vos déplacements
+                </p>
+              </div>
+              <div class="p-4 h-[40vh] flex flex-col justify-center">
+                <div class="text-2xl lg:text-3xl mb-4">
+                  <i class='bx bx-file-find bg-blue-100 shadow-sm text-blue-700 border-blue-700/15 rounded-full p-4'></i>
+                </div>
+                <h2 class="text-3xl">Commande en ligne</h2>
+                <p class="mt-3">
+                  Nous nous occupons de commander en ligne le vehicule que vous voulez
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- image -->
+        <section class="w-screen imagebox h-[80vh] overflow-hidden relative">
+          <div class="h-full absolute w-full grid place-content-center bg-blue-950/50 z-30">
+            <div>
+              <p></p>
+            </div>
+          </div>
+          <img src="./src/assets/img/enterprise (2).jpg" class="size-full relative imagehome1 z-20 object-cover" alt="">
+        </section>
+        <!-- Detail des services -->
+        <section class="h-max mb-20 mt-16 flex justify-center">
+          <div class="container lg:w-[85%] text-blue-950 mx-auto">
+            <!-- grille 1 : Vente -->
+            <div id="vente" class="grid detail1 lg:gap-12 lg:grid-cols-2 lg:items-center p-4 mt-16">
+              <div class="p-4 imagedetail1">
+                <img src="./src/assets/img/21TDIEULHD_QASHQAI_P33B_VISIA_PS_001.png" class="scale-[1.3] lg:scale-[1.4]" alt="">
+                <!-- <img src="./src/assets/img/venteasset.png" alt=""> -->
+              </div>
+              <div class="p-4 textdetail1">
+                <div>
+                  <div>
+                    <span classe="text-2xl text-blue-700">01</span>
+                  </div>
+                  <h1 class="text-3xl lg:text-4xl mt-2">Nous sommes dans la <span class="text-blue-700">vente</span> des vehicules neufs et usagés</h1>
+                  <p class="mt-8">Que vous recherchiez des voitures de fonction pour vos employés, des voitures personnels, des véhicules utilitaires pour votre flotte de livraison ou des voitures de luxe, nous avons ce qu'il vous faut. Notre équipe expérimentée est là pour vous aider à trouver les voitures qui correspondent le mieux à votre budget et à vos exigences.</p>
+                  
+                </div>
+  
+                <a href="./src/pages/contact.html" class="p-4 w-max hover:text-blue-700 hover:bg-transparent duration-300 mt-8 block px-8 text-sm bg-blue-700 border border-blue-700/15 text-white text-center rounded-md">
+                  Prendre contact
+                </a>
+              </div>
+            </div>
+  
+            <!-- grille 2 : Location -->
+            <div id="location" class="flex detail2 flex-col-reverse lg:grid lg:gap-12 lg:items-center lg:grid-cols-2 p-4 mt-20">
+              <div class="p-4 textdetail2">
+                <div>
+                  <div>
+                    <span classe="text-2xl text-blue-700">02</span>
+                  </div>
+                  <h1 class="text-3xl lg:text-4xl mt-2">Faites la <span class="text-blue-700">location</span> de nos véhicules pour vos courses</h1>
+                  <p class="mt-8">Nous comprenons que chaque voyage est unique, c'est pourquoi nous offrons une vaste sélection de véhicules pour répondre à tous vos besoins. Notre flotte de voitures est régulièrement entretenue et mise à jour pour vous offrir des véhicules fiables, confortables et équipés des dernières technologies. Nous nous engageons à vous fournir des voitures propres, bien entretenues et prêtes à prendre la route.</p>
+                  
+                </div>
+  
+                <a href="./src/pages/contact.html" class="p-4 block w-max mt-8 hover:text-blue-700 hover:bg-transparent duration-300 px-8 text-center text-sm bg-blue-700 border border-blue-700/15 text-white rounded-md">
+                  Prendre contact
+                </a>
+              </div>
+              <div class="p-4 imagedetail2">
+                <img src="./src/assets/img/22TDIEULHD_XT_TEKNA_PS_001.png" class="scale-[1.3] lg:scale-[1.5]" alt="">
+                <!-- <img src="./src/assets/img/rentcarasset.png" alt=""> -->
+              </div>
+            </div>
+
+            <!-- grille 3 : Commande en ligne -->
+            <div id="commande" class="grid detail3 lg:gap-12 lg:grid-cols-2 lg:items-center p-4 mt-16">
+              <div class="p-4 imagedetail3">
+                <img src="./src/assets/img/Ariya_KBY-Ceramic_gray_Engage_63kw.png" class="scale-[1.3] lg:scale-[1.4]" alt="">
+                <!-- <img src="./src/assets/img/commande.png" alt=""> -->
+              </div>
+              <div class="p-4 textdetail3">
+                <div>
+                  <div>
+                    <span classe="text-2xl text-blue-700">03</span>
+                  </div>
+                  <h1 class="text-3xl lg:text-4xl mt-2">Nous faisons la <span class="text-blue-700">commande</span> en ligne pour vous, chez nos partenaires</h1>
+                  <p class="mt-8">Vous avez besoin d'un vehicule spécifique , nous nous occupons de faire  la commande pour vous chez nos differents collaborateurs dans le monde </p>
+                  
+                </div>
+  
+                <a href="./src/pages/contact.html" class="p-4 w-max hover:text-blue-700 hover:bg-transparent duration-300 mt-8 block px-8 text-sm bg-blue-700 border border-blue-700/15 text-white text-center rounded-md">
+                  Prendre contact
+                </a>
+              </div>
+            </div>
+          </div>
+  
+        </section>
+
+        <!-- pourquoi nous choisir -->
+        <section class="bg-blue-950 rounded-tl-[3rem] lg:h-[90vh] flex justify-center items-center">
+          <div class="container  w-screen  grid lg:grid-cols-3 mx-auto p-4 lg:p-6">
+            <div class="text-white mt-12">
+              <h2 class="font-medium text-2xl lg:text-5xl text-center lg:text-left">
+                Pourquoi nous choisir ?
+              </h2>
+
+            </div>
+
+            <div class="grid lg:col-span-2 mb-12 lg:grid-cols-3 mt-12 gap-4 lg:gap-8 text-white">
+              <div class="border border-white/20 p-4 rounded-md">
+                <p class="text-3xl mb-4 rounded-full p-4 flex justify-center items-center shadow-sm size-14"><i class='bx bx-car'></i></p>
+                <h4 class="text-xl">Une large selection des voitures</h4>
+              </div>
+              <div class="border border-white/20 p-4 rounded-md">
+                <p class="text-3xl mb-4  rounded-full p-4 flex justify-center items-center shadow-sm size-14"><i class='bx bx-money-withdraw'></i></p>
+                <h4 class="text-xl">Des prix competitif sur le marché</h4>
+              </div>
+              <div class="border border-white/20 p-4 rounded-md">
+                <p class="text-3xl mb-4 rounded-full p-4 flex justify-center items-center shadow-sm size-14"><i class='bx bx-support'></i></p>
+                <h4 class="text-xl">Service à la clientèle exceptionnelle</h4>
+              </div>
+              <div class="border border-white/20 p-4 rounded-md">
+                <p class="text-3xl mb-4 rounded-full p-4 flex justify-center items-center shadow-sm size-14"><i class='bx bx-group'></i></p>
+                <h4 class="text-xl">Personnel compétent et amical</h4>
+              </div>
+              <div class="border border-white/20 p-4 rounded-md">
+                <p class="text-3xl mb-4 rounded-full p-4 flex justify-center items-center shadow-sm size-14"><i class='bx bxs-select-multiple'></i></p>
+                <h4 class="text-xl">Engagement envers la satisfaction du client</h4>
+              </div>
+              
+            </div>
+            <div></div>
+          </div>
+        </section>
+
+        <!-- image -->
+        <section class="w-screen imagebox2 h-[80vh] overflow-hidden relative">
+          <div class="h-full absolute w-full grid place-content-center bg-blue-950/50 z-30">
+            <div>
+              <p></p>
+            </div>
+          </div>
+          <img src="./src/assets/img/enterprise (4).jpg" class="size-full relative imagehome2 z-20 object-cover" alt="">
+        </section>
+
+        <!-- Les avis clients -->
+        <section class="flex client h-max justify-center bg-gray-100">
+          <div class="container mt-20 mb-20 p-4 mx-auto lg:w-[85%]">
+            <div class="text-blue-950">
+              <h2 class="text-3xl lg:text-5xl text-center">
+                Ce que nos clients disent sur nous
+              </h2>
+              <p class="text-center mt-4">
+                Nous avons la satisfaction de nos clients et c'est ce qui fait notre force et notre différence
+              </p>
+            </div>
+  
+            <div class="mt-20 grid gap-7 lg:grid-cols-2">
+              
+              <!-- grille des témoignages clients -->
+              <div class="bg-white text-blue-950 p-7 shadow-sm rounded-2xl">
+                <div class="text-yellow-500 text-xl">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half' ></i>
+                  <i class='bx bx-star' ></i>
+                </div>
+                <p class="mt-5">
+                  "J'étais à la recherche d'une voiture d'occasion et j'ai trouvé une large sélection chez NICO BUSINESS CARS, le personnel m'a aidé à trouver la voiture parfaite pour mes besoins et mon budget. Je suis très satisfait de mon achat et je recommanderais ce concessionnaire à tous ceux qui recherchent une voiture d'occasion."
+                </p>
+  
+                <div class="flex items-center gap-2 mt-5">
+                  <div class="h-12 w-1 bg-blue-950"></div>
+                  <div>
+                    <p>Mr. BONESTIN</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white text-blue-950 p-7 shadow-sm rounded-2xl">
+                <div class="text-yellow-500 text-xl">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half' ></i>
+                  <i class='bx bx-star' ></i>
+                </div>
+                <p class="mt-5">
+                  " J'ai commandé un véhicule chez NICO BUSINESS CARS, j'ai été bien pris en charge par le personnel, j'ai été bien guidé sur mon choix, j'ai reçu plusieurs conseils et enfin j'ai pu faire mon paiement de façon évolutive jusqu'à ce que mon véhicule est arrivé sur place après un nombre des jours bien raisonnable. Faites confiance à NICO BUSINESS chers tous pour vos commandes."
+                </p>
+  
+                <div class="flex items-center gap-2 mt-5">
+                  <div class="h-12 w-1 bg-blue-950"></div>
+                  <div>
+                    <p>Mr. Donat KAHAYA</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white text-blue-950 p-7 shadow-sm rounded-2xl">
+                <div class="text-yellow-500 text-xl">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half' ></i>
+                  <i class='bx bx-star' ></i>
+                  <i class='bx bx-star' ></i>
+                </div>
+                <p class="mt-5">
+                  "J'ai récemment acheté un véhicule neuf 00km chez NICO BUSINESS CARS, et j'ai été très impressionné par le service que j'ai reçu. Le personnel était très coopératif et compétent, et ils ont pris le temps de répondre à toutes mes questions. Je recommanderais sans hésiter ce concessionnaire à tous ceux qui recherchent une nouvelle voiture."
+                </p>
+  
+                <div class="flex items-center gap-2 mt-5">
+                  <div class="h-12 w-1 bg-blue-950"></div>
+                  <div>
+                    <p> Mr. Hugues ZALUZOLUDIEY </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white text-blue-950 p-7 shadow-sm rounded-2xl">
+                <div class="text-yellow-500 text-xl">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half' ></i>
+                  <i class='bx bx-star' ></i>
+                </div>
+                <p class="mt-5">
+                  "Excellent service d'achat de voiture. Équipe patiente, voiture conforme à mes besoins, processus de financement simplifié. Recommandé ! Une expérience d'achat sans tracas et une garantie de satisfaction."
+                </p>
+  
+                <div class="flex items-center gap-2 mt-5">
+                  <div class="h-12 w-1 bg-blue-950"></div>
+                  <div>
+                    <p> Mr Jean-Luc P.</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- contact map and adress -->
+        <section>
+            <div class="h-max lg:h-[70vh] flex justify-center">
+                <div class="container mx-auto text-blue-950 lg:w-[85%] mt-12 mb-6 lg:mb-12 p-4">
+                  <div class="grid lg:grid-cols-2 gap-4">
+                    <div class="bg-blue-50 w-[88vw] mt-8 lg:mt-0 text-blue-950 lg:w-[30vw] h-max rounded-3xl p-4 lg:p-6">
+                      <div class="p-4 border-b bg-blue-950 text-white rounded-2xl">
+                        <h2 class="text-3xl font-bold">Contactez-nous</h2>
+                        <p class="mt-2">notre service client est en ligne 24h/24 & 7j/7</p>
+                      </div>
+                      <ul class="mt-8">
+                        <li><a href="mailto:nicobusiness2@gmail.com" class="flex gap-2 items-center">
+                          <i class='bx bx-envelope text-3xl'></i>
+                          <span class="text-xl">nicobusiness2@gmail.com</span>
+                        </a></li>
+                        <li><a href="" class="flex gap-2 mt-4 items-center">
+                          <i class='bx bx-map text-3xl'></i>
+                          <span class="text-xl">RDC, Lubumbashi Av Maniema Coin Kimbangu</span>
+                        </a></li>
+                        <li><a href="https://wa.me/+243993909011" class="flex gap-2 mt-4 items-center">
+                          <i class='bx bxl-whatsapp text-3xl'></i>
+                          <span class="text-xl">+243 99 3909 011</span>
+                        </a></li>
+                        <li><a href="https://wa.me/+243993909011" class="flex gap-2 mt-4 items-center">
+                          <i class='bx bxl-facebook-circle text-3xl'></i>
+                          <span class="text-xl">nico business cars</span>
+                        </a></li>
+                        
+                      
+                      </ul>
+                    </div>
+                      <div class="p-4">
+                        <div class="h-[50vh] lg:h-[55vh] w-[80vw] lg:w-[95%]  overflow-hidden">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3907.5770911384707!2d27.47891607505492!3d-11.653454988553714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDM5JzEyLjQiUyAyN8KwMjgnNTMuNCJF!5e0!3m2!1sfr!2scd!4v1714254002427!5m2!1sfr!2scd" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="object-cover h-full w-full"></iframe>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="h-max lg:h-[50vh] mt-12">
+          <div class="container h-full flex flex-col p-4 justify-between text-blue-950 mt-16 mb-2 lg:mb-16 mx-auto lg:w-[85%]">
+            <div class="flex flex-col lg:flex-row lg:justify-between">
+              <div class="">
+                <div class="h-40 w-40"><img src="./src/assets/img/nico logo blue.png" class="" alt=""></div>
+                <!-- <p class="mt-4">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Rem architecto .</p> -->
+    
+                <div class="text-2xl text-gray-600 gap-4 flex items-center mt-4">
+                  <a href="https://www.facebook.com/profile.php?id=61553027254603&mibextid=ZbWKwL" class="hover:text-blue-700 duration-300"><i class='bx bxl-facebook-circle'></i></a>
+                  <a href="https://www.instagram.com/nicobusinesscars_nbc?igsh=NW1xMGo3cDBpbmR0" class="hover:text-blue-700 duration-300"><i class='bx bxl-instagram-alt' ></i></a>
+                  <a href="https://wa.me/+243993909011" class="hover:text-blue-700 duration-300"><i class='bx bxl-whatsapp' ></i></a>
+                  <a href="https://www.linkedin.com/company/nicobusinesscars/" class="hover:text-blue-700 duration-300"><i class='bx bxl-linkedin'></i></a>
+                  <a href="https://www.tiktok.com/@nicobusinesscars7?_t=8llLIoYk2ha&_r=1" class="hover:text-blue-700 duration-300"><i class='bx bxl-tiktok'></i></a>  
+                </div>
+              </div>
+    
+              <div class="grid lg:grid-cols-2 lg:w-[45%]">
+                <div class="mt-4 lg:mt-0">
+                  <div  class="mb-4">
+                    <h2 class="text-2xl font-normal">Liens utils</h2>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <a href="./src/pages/about.html">A propos</a>
+                    <a href="./src/pages/galerie.html">Galerie</a>
+                    <a href="./src/pages/contact.html">Contact</a>
+                  </div>
+                </div>
+                <div>
+                  <div  class="mb-4 mt-4 lg:mt-0">
+                    <h2 class="text-2xl font-normal">Services</h2>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <a href="#vente">Vente</a>
+                    <a href="#location">Location</a>
+                    <a href="#commande">Commande</a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="border-t p-4 flex mt-6 lg:mt-0 flex-col items-center lg:flex-row lg:justify-between">
+              <div class="flex items-center gap-2">
+                  <p class="underline">RDC, Lubumbashi</p>
+                
+              </div>
+              <div>
+                <h3>Copyright &copy; 2024 NicoBusinessCar</h3>
+              </div>
+            </div>
+            
+          </div>
+        </footer>
+      </main>
+  
+      <!-- script  file  here-->
+      <!-- gsap -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+      
+      <!-- lenis -->
+      <script src="https://unpkg.com/lenis@1.0.44/dist/lenis.min.js"></script> 
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./src/js/main.js"></script>
+</body>
+</html>
